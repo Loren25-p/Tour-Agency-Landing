@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Турагентство</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">TravelPro</div>
+        <nav class="nav">
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#destinations">Направления</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <button class="btn">Забронировать</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <video autoplay muted loop class="hero-video">
+        <source src="assets/video/video1.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+        <h1>Путешествия мечты</h1>
+        <p>Откройте для себя новые горизонты с нами</p>
+        <button class="btn">Оставить заявку</button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>О нас</h2>
+        <p>
+          Мы — туристическое агентство с многолетним опытом. Организуем
+          незабываемые путешествия по всему миру. Индивидуальный подход,
+          качественный сервис и выгодные цены — наш приоритет.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <div class="visa_img">
+              <img src="assets/img/visa.jpg" alt="Визовая поддержка" />
+            </div>
+            <h3>Визовая поддержка</h3>
+            <p>Поможем с оформлением виз в любые страны.</p>
+          </div>
+          <div class="service-item">
+            <img src="assets/img/ticket.avif" alt="Авиабилеты" />
+            <h3>Авиабилеты</h3>
+            <p>Быстрое и удобное бронирование авиабилетов.</p>
+          </div>
+          <div class="service-item">
+            <img src="assets/img/hotel.jpg" alt="Бронирование отелей" />
+            <h3>Отели</h3>
+            <p>Подберём лучшие варианты жилья под ваш бюджет.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+      <div class="container">
+        <h2>Популярные направления</h2>
+        <div class="destination-list">
+          <div class="destination-card">
+            <img src="assets/img/maldiv.avif" alt="Мальдивы" />
+            <div class="destination-info">
+              <h3>Мальдивы</h3>
+              <p>Райский отдых на берегу океана.</p>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="assets/img/turkish.jpg" alt="Турция" />
+            <div class="destination-info">
+              <h3>Турция</h3>
+              <p>All inclusive на лучших курортах.</p>
+            </div>
+          </div>
+          <div class="destination-card">
+            <img src="assets/img/dubai.jpg" alt="Дубай" />
+            <div class="destination-info">
+              <h3>Дубай</h3>
+              <p>Роскошные отели и шопинг.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="contact-grid">
+          <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="tel" placeholder="Телефон" required />
+            <textarea placeholder="Комментарий"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+          <div class="contact-map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample&amp;source=constructor"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 TravelPro. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
