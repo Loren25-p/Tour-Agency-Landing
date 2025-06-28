@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #fff;
   color: #333;
   line-height: 1.6;
@@ -36,7 +36,6 @@ img {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
-
 }
 
 /* === HEADER === */
@@ -58,7 +57,6 @@ img {
 .nav {
   display: flex;
   gap: 30px;
-
 }
 
 .nav a {
@@ -131,7 +129,7 @@ img {
   padding: 80px 0;
   background-color: #f9f9f9;
   text-align: center;
-background-color: #ffde9c;
+  background-color: #ffde9c;
 }
 
 .about h2 {
@@ -156,14 +154,12 @@ background-color: #ffde9c;
   margin-bottom: 40px;
 }
 
-.services-list  {
+.services-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
-
-
 
 .service-item {
   max-width: 300px;
@@ -203,12 +199,12 @@ background-color: #ffde9c;
   justify-content: center;
 }
 
-.destination-card img{
+.destination-card img {
   width: 300px;
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 
@@ -273,7 +269,19 @@ background-color: #ffde9c;
 
 /* === АДАПТИВ === */
 @media (max-width: 768px) {
-    
+/* 
+    .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+  .about {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    background-color: #ffde9c;
+  }
 
   .header .container {
     flex-direction: column;
@@ -286,6 +294,78 @@ background-color: #ffde9c;
     gap: 15px;
     font-size: 10px;
   }
+
+  .hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .services-list,
+  .destination-list,
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destination-card,
+  .service-item {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .contact-map {
+    height: 240px;
+  } */
+
+    .hero {
+    height: 70vh;
+  }
+
+  .about {
+    padding: 80px 0;
+    background-color: #ffde9c;
+    text-align: center;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 10px;
+  }
+
+  .hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .hero-content {
+  top: 120px;
+  transform: none;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .hero-content h1 {
     font-size: 32px;
